@@ -49,19 +49,22 @@
             margin: 30px 0;
         }
         
-        .form-container {
-            width: 100%;
-            height: 625px;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        .btn-confirmar {
+            display: inline-block;
+            background-color: #d14d7a;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         
-        .form-iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            min-height: 500px;
+        .btn-confirmar:hover {
+            background-color: #b33c66;
         }
         
         footer {
@@ -100,18 +103,16 @@
             <h2>Confirme sua presença</h2>
             <p>Por favor, responda até 18/07/2025</p>
             
-            <!-- FORMULÁRIO ATUALIZADO (OTIMIZADO PARA MOBILE) -->
-            <div class="form-container">
-                <iframe 
-                    class="form-iframe"
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSfSyMIMrXhRpdSft2_OvYi2Aeszbu3Wv8elETYk-f_ZZThYlw/viewform?embedded=true"
-                    frameborder="0"
-                    marginheight="0"
-                    marginwidth="0"
-                    loading="lazy">
-                    Carregando formulário...
-                </iframe>
-            </div>
+            <!-- SOLUÇÃO 1: BOTÃO QUE ABRE O FORMULÁRIO EM NOVA ABA -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSyMIMrXhRpdSft2_OvYi2Aeszbu3Wv8elETYk-f_ZZThYlw/viewform" 
+               target="_blank"
+               class="btn-confirmar">
+               CLIQUE AQUI PARA CONFIRMAR PRESENÇA
+            </a>
+            
+            <p style="margin-top:15px;font-size:0.9em;">
+                <em>O formulário abrirá em uma nova janela</em>
+            </p>
         </div>
         
         <footer>
